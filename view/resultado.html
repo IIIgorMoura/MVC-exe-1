@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resultado - Calculo de juros compostos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado do Cálculo</h1>
+        <div id="resultado"></div>
+    </div>
+    <script>
+        const urlParamn = new URLSearchParams(window.location.search);
+        const jurosCompostos = parseFloat(urlParamn.get('jurosCompostos'));
+        document.getElementById('resultado').innerText = `Os juros compostos resultam em: ${jurosCompostos}`
+    </script>
+</body>
+</html>
